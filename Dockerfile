@@ -7,7 +7,7 @@ RUN \
 	apt-get update -y && \ 
 	apt-get install -y unifi-beta
 
-CMD ["tail -F /usr/lib/unifi/logs/server.log"]
+CMD ["tail -f /usr/lib/unifi/logs/server.log"]
 
 #Expose external ports per https://community.ubnt.com/t5/UniFi-Controller-Installation/UniFi-Change-default-ports-for-controller-and-UAPs/ta-p/412673
 EXPOSE 8081 8080 8443 8880 8843
